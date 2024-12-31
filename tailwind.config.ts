@@ -13,9 +13,9 @@ const config: Config = {
       },
       colors: {
         blue: {
-          400: '#2589FE',
-          500: '#0070F3',
-          600: '#2F6FEB',
+          400: '#0f373e',
+          500: '#041c24',
+          600: '#04141a',
         },
       },
     },
@@ -27,6 +27,14 @@ const config: Config = {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms')],
+  plugins: [
+    require('@tailwindcss/forms'), // Plugin pour les formulaires
+    require('daisyui'), // Plugin DaisyUI
+  ],
+  daisyui: {
+    themes: [
+      "light", // Thème par défaut
+    ],
+  },
 };
 export default config;
